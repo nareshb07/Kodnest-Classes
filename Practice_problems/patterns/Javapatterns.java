@@ -2,6 +2,67 @@
 
 class JavaPatterns {
 
+    
+    // Ninth pattern in python
+
+    // * * * * *
+    //  * * * *
+    //   * * *
+    //    * *
+    //     *
+
+    static void pattern9(int rows) {
+        System.out.println("Ninth pattern in python");
+        for(int i = 0; i<=rows-1; i++){
+            for (int j = 0; j<i; j++){
+                System.out.print(" ");
+            }
+            for(int k = 0; k<rows-i; k++){
+                System.out.print("* ");
+            }   
+            System.out.println("");
+
+        }
+
+    }
+
+    // Eighth pattern in python
+
+    //                 *
+    //                * *
+    //               * * *
+    //              * * * *            
+    //             * * * * *
+
+    static void pattern8(int rows){
+        System.out.println("Eighth pattern in python");
+        for (int i = 1; i<=rows; i++){
+            for (int j = 1; j<=rows-i; j++){
+                System.out.print(" ");
+            }
+            for (int k = 1; k<=i; k++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Seventh pattern in python
+
+    // 1 2 3 4 5
+    // 1 2 3 4
+    // 1 2 3
+    // 1 2
+    // 1
+
+    static void pattern7(int rows){
+        for(int i=rows; i>=1; i--){
+            for(int j = 1; j<=i; j++){
+                System.out.print(j + " ");
+            }System.out.println();
+        }
+    }
+
     // Sixth pattern in python
 
     // * * * * *
@@ -11,7 +72,7 @@ class JavaPatterns {
     // *
 
     static void pattern5(int rows){
-        System.out.println("Printing pattern 5");
+        System.out.println("Printing pattern 6");
         for(int i = rows;i>=1; i--) {
             for (int j = 1; j <= i; j++){
                 System.out.print("* ");
@@ -123,6 +184,9 @@ class JavaPatterns {
        pattern3(5);
        pattern4(5);
        pattern5(5);
+       pattern7(5);
+       pattern8(5);
+       pattern9(5);
 
     }
 
