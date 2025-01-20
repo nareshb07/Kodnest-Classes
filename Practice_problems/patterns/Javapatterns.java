@@ -2,6 +2,35 @@
 
 class JavaPatterns {
 
+        static void pattern11(int rows) {
+                
+            for (int i = 1; i <= rows; i++) {
+                for(int j = 1; j >= rows-i+1 ; j++) {
+                    if (i == 1 || j == 1 || j == rows-i+1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                } System.out.println();
+            }
+        }
+
+
+
+        static void pattern10(int rows) {
+             
+            for (int i = 1; i <= rows; i++) {
+                for(int j = 1; j <= i; j++) {
+                    if (i == rows || j == 1 || j == i) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                } System.out.println();
+            }
+        }
+    
+
     
     // Ninth pattern in python
 
@@ -187,6 +216,8 @@ class JavaPatterns {
        pattern7(5);
        pattern8(5);
        pattern9(5);
+       pattern10(5);
+       pattern11(5);
 
     }
 
