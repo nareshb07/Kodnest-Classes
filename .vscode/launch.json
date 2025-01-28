@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Basic_programs",
+            "request": "launch",
+            "mainClass": "Basic_programs",
+            "projectName": "Kodnest_4f18ea1b"
+        },
+        {
+            "type": "java",
             "name": "JavaPatterns",
             "request": "launch",
             "mainClass": "JavaPatterns",

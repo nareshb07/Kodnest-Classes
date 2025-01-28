@@ -1,0 +1,28 @@
+p {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: change_color 5s infinite;
+
+}
+
+@keyframes  change_color {
+    from {
+        background-color: black;
+        color: white;
+    }
+
+    to {
+        background-color: white;
+        color: black;
+    }
+
+    from {
+        background-color: black;
+        color: white;
+    }
+}

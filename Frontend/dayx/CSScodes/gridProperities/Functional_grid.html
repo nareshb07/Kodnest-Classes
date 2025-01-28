@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Grid</title>
+    <style>
+        .grid-container {
+            background-color: lightblue;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+
+            
+        }
+
+        .Product  {
+            background-color: lightgreen;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="Product">
+            <h3>Product 1</h3>
+            <p> Rs.240/-</p>
+        </div>
+        <div class="Product">
+            <h3>Product 2</h3>
+            <p> Rs.40/-</p>
+        </div>
+        <div class="Product">
+            <h3>Product 3</h3>
+            <p> Rs.120/-</p>
+        </div>
+        <div class="Product">
+            <h3>Product 4</h3>
+            <p> Rs.200/-</p>
+        </div>
+        
+    </div>
+</body>
+</html>
