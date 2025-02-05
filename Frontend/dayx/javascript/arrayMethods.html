@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let arr = [10, 20, 30]
+    
+    console.log(arr);
+
+    // adding Element at End
+    arr.push(40);
+    console.log(arr);
+
+     // removing Element at End
+    arr.pop()
+    console.log(arr);
+
+     // adding Element at start
+    arr.unshift(5);
+    console.log(arr);
+
+     // removing Element at start
+    arr.shift();
+    console.log(arr);
+
+
+    // splice(start, end , ele1, ele2, ele3,....) replaces from start - end with ele1, ele2, ele3 .....
+    arr2 = [1,2,3,4,5,6,7]
+
+    arr2.splice(1,3, 200,300,400);
+
+    console.log(arr2);
+
+
+    //slice returns the sub arary slice(start, end)
+    arr3 = [1,2,3,4,5,6,7,8]
+    console.log(" arr3.slice(1,4) :",  arr3.slice(1,4));
+    
+
+    // indexOf Method return index of specified index 
+    // Syntax : arr.indexOf(index)
+
+    console.log(arr3.indexOf(7));  //output: 6
+    console.log(arr3.indexOf(10)); //output: -1
+
+    // include method return true if the vlaue present in array else false
+    console.log(arr3.includes(1));
+    
+
+    //sort return the array in sorted 
+    arr4 = [9,4,1,3,6,2]
+    arr4.sort()
+    console.log(arr4);
+
+    //reverse: reverse the array
+
+    arr5 = [9,1,0,4,2,5,6]
+    arr5.reverse();
+    console.log(arr5);
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+
+</script>
+</html>

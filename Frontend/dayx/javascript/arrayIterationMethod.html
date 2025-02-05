@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    arr = [1,4,5,6]
+
+    for( var i = 0; i < arr.length; i++) {
+        console.log("element at index ", i, " is " , arr[i]);
+        
+    }
+
+    console.log("forEach Method");
+    
+    arr.forEach((element,index) => {
+        console.log("element at index ",index, "is " ,element);
+        
+    });
+
+    arr2 = [21,22,23,25,24,18,29,20,30]
+    even = []
+    odd = []
+    arr2.forEach(element => {
+        if(element%2 == 0) {
+            even.push(element);
+        } else {
+            odd.push(element);
+        }
+
+    })
+
+    console.log(`even elements in ${arr2} are ${even}` );
+    console.log(`odd elements in ${arr2} are ${odd}` );
+    
+
+    // finding sum of array
+
+    arr3  = [1,2,3,4,5,6,7]
+    sum = 0
+    arr3.forEach((element) => {
+        sum = sum + element;
+    })
+
+    console.log(sum);
+
+    // finding sum of array using reduce method
+
+    sum_result = arr3.reduce((sum, ele) => sum+ele, 0)
+    console.log(`sum using reduce method ${sum_result}`);
+
+    mul_result = arr3.reduce((res, ele) => res*ele, 1)
+    console.log(`product of elements in array using reduce method is ${mul_result}`);
+
+    // printing even number using filter method
+
+    console.log('printing even number using filter method', arr3.filter((ele)=>ele%2==0));
+
+    //printing squares if the number
+
+    square = arr3.map((ele) => ele*ele);
+    console.log(square);
+    
+
+    //join method
+
+    
+    console.log(arr3.join("-"));
+    
+
+    
+    
+</script>
+</html>
