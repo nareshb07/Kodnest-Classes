@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // WAC to print sum of array
+    arr = [1,4,5,2,8]
+    //method -1 
+    let sum = 0
+    arr.forEach((ele) => {
+        sum = sum + ele;
+        return sum
+    });
+
+    console.log(sum);
+
+    sum1 = arr.reduce( (sum, ele) => sum+ele, 0)
+    console.log(sum1);
+    
+    
+</script>
+</html>
