@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="multifields">
+        <lable> Username</lable>
+        <input id = "username" type="text">
+
+        <label> Age :  </label>
+        <input id = "age" type="number"> 
+
+        <button onclick="validate()">Submit </button>
+    </form>
+    
+</body>
+<script>
+    function validate(){
+        event.preventDefault()
+
+        let form = document.getElementById('multifields');
+        let name = form.username.value;
+        let age = form.age.value;
+        
+        
+
+        if ( name == "" || age == ""){
+            alert("please enter both name and age")
+        } else {    
+            alert(name + " " + age);
+        }
+
+        if (age < 0) {
+            alert("Age should be positive")
+        }
+    }
+</script>
+</html>

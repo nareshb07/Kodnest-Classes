@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Username</label>
+        <input type="text" id="username">
+        <button id ="btn" onclick="validate()">Submit</button>
+    </form>
+</body>
+<script>
+    
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function validate(){
+
+        let pattern = /^[a-zA-Z]{2,15}$/;
+        let data = document.getElementById("username");
+
+        if(pattern.test(data)){
+            alert("Valid Username");
+        } else {
+            alert("Invalid Username");
+        }
+    })
+</script>
+</html>
